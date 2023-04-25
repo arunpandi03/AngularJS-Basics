@@ -1,0 +1,115 @@
+<!doctype html>
+<html ng-app>
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="D:\angularSource\angular.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <style>
+       table{
+        border: 0cap;
+        background-color:aquamarine;
+        border-radius: 0cqh;
+        
+       }  
+
+    </style>
+
+  </head>
+  <center>
+  <body bgcolor="#DBF9FC">
+  <h1><HR> ***** WELCOME TO MY ANGULAR JS PAGE *****</HR></h1>
+  <marquee>learn new.!!   grow High!!</marquee> 
+    <div >
+        <form>
+      <label>FirstName:</label>
+      <input type="text" ng-model="FirstName" placeholder="Enter a FirstName here" required>
+  <br><br>
+      <label>LastName:</label>
+      <input type="text" ng-model="LastName" placeholder="Enter a LastName here" required>
+    <br><br>
+      <label>Email:</label>
+      <input type="email" ng-model="Email" placeholder="Enter a Email here" required>
+     <br><br>
+      <label>Password:</label>
+      <input type="password" ng-model="password" placeholder="Enter a password here" required><br><br>
+
+
+
+      <button class="btn btn-primary"  value = "ok" ng-model="submit" id ="submit">submit</button>
+      <button class="btn btn-secondary" value = "cancel" ng-model="reset" id ="cancel">cancel</button><br><br>
+      
+
+
+    </form>
+    </div><hr>
+    <div>
+        <h1>Response:</h1>
+        <h1>Hello {{FirstName}},  you have register Successfully!</h1>
+    </div><br><hr>
+    <div>
+        <table>
+            <tr>
+            <th>FirstName</th>
+            <th>LastName</th> 
+            <th>Email</th>
+   
+            </tr>
+            <tr>
+            <td>{{FirstName}}</td>
+            <td>{{LastName}}</td>
+            <td>{{Email}}</td>
+            </tr>
+         
+            </table>
+    </div>
+
+  <hr>
+<div>
+  <h1>Angular basic practice </h1>   
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="name"></p>
+<p ng-bind="name"></p>
+</div>
+
+<p>expression</p>
+<div ng-app="">
+  <p>My 5+5 expression: {{ 5 + 5 }}</p><br>
+  <p>My first expression: {{ 5 + 5 }}</p>
+  <p>My first expression: {{ 5 + 5 * 24 }}</p>
+  
+
+  role : <input type="text" key="role" ng-model="role">
+  My Role : {{role}}
+
+  number1 : <input type="number" key="role" ng-model="role"><br><br>
+  number2 : <input type="number" key="role" ng-model="role"><br><br>
+  sum1 : {{number1}}+{{number2}}zzz
+  sum2 : number1+number2;
+</div>
+
+<p>Try to change the names.</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "ARUN";
+    $scope.lastName= "PANDI";
+});
+</script>
+
+
+
+
+  </body>
+</center>
+</html> 
